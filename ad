@@ -1,0 +1,36 @@
+class adt:
+    def __init__(self):
+        self.a=[]
+
+    def createlist(self):
+        n=int(input("enter number of elements:"))
+        for i in range(0,n):
+            ele=int(input("enter elements:"))
+            self.a.append(ele)
+
+    def printlist(self):
+        print(self.a)
+
+    def insert(self,index,value):
+        self.a.insert(index,value)
+
+    def delete(self,value):
+        self.a.remove(value)
+
+    def search(self,value):
+        if value in self.a:
+            print("value is found in array")
+        else:
+            print("value not found")
+
+
+list1=adt()
+list1.createlist()
+list1.printlist()
+list1.insert(2,5)
+list1.printlist()
+ele=int(input("enter the value you want to delete:"))
+list1.delete(ele)
+list1.printlist()
+num=int(input("enter the number you want to search:"))
+list1.search(num)
