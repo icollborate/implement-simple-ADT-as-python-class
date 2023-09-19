@@ -1,0 +1,19 @@
+class adt:
+    def __init__(self):
+        self.a=[]
+
+    def createlist(self):
+        n=int(input("enter number of elements:"))
+        for i in range(0,n):
+            ele=int(input("enter elements:"))
+            self.a.append(ele)
+
+    def printlist(self):
+        print(self.a)
+
+    
+
+
+obj_adj=adt()
+obj_adj.createlist()
+obj_adj.printlist()
