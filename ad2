@@ -1,0 +1,12 @@
+class factorial:
+    def fact(self,n):
+        if n==0:
+            return 1
+        else:
+            return n*self.fact(n-1)
+
+
+obj_fact=factorial()
+num=int(input("enter a number:"))
+result=obj_fact.fact(num)
+print(f"the factorial of given number {num} is {result}")
